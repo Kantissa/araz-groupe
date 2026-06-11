@@ -1142,6 +1142,37 @@ svg {
   }
 }
 
+/* ── HERO - responsive image variants ───────────────── */
+/* Desktop fallback (use provided hi-res image) */
+.hero-bg {
+  background-image: url("assets/hero-bg-1920.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 1024px) {
+  .hero-bg {
+    background-image: url("assets/hero-bg-1280.webp");
+    background-position: center 40%;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-bg {
+    background-image: url("assets/hero-bg-720.webp");
+    background-position: center top;
+  }
+}
+
+/* Optional: support high-DPI with image-set (browser support varies)
+.hero-bg {
+  background-image: image-set(
+    url('assets/hero-bg-1920.webp') 1x,
+    url('assets/hero-bg-3840.webp') 2x
+  );
+}
+*/
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -1217,7 +1248,7 @@ svg {
     font-size: 1.05rem;
   }
   .hero-bg {
-    background-position: center 50%;
+    background-position: center top;
   }
   .hero-polygon {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
