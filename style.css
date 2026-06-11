@@ -1105,9 +1105,9 @@ svg {
   .container {
     padding-left: clamp(1rem, 5vw, 2rem);
     padding-right: clamp(1rem, 5vw, 2rem);
-  }
-  .hero-content {
-    width: 100%;
+    .hero-bg {
+      background-position: center top;
+    }
     padding: clamp(4rem, 6vw, 6rem) clamp(1.5rem, 4vw, 2rem)
       clamp(3rem, 5vw, 4rem);
   }
