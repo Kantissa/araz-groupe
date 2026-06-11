@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(if \\(-not \\(Test-Path \"C:\\\\Users\\\\LENOVO\\\\.claude\\\\projects\\\\e--Logiciel-Visual-Studio-Code-Site-internet-Araz-Groupe\\\\memory\"\\)\\) { New-Item -ItemType Directory -Force \"C:\\\\Users\\\\LENOVO\\\\.claude\\\\projects\\\\e--Logiciel-Visual-Studio-Code-Site-internet-Araz-Groupe\\\\memory\" })",
+      "PowerShell(New-Item -ItemType Directory -Force \"e:\\\\Logiciel\\\\Visual Studio Code\\\\Site internet Araz Groupe\\\\assets\")",
+      "PowerShell(Move-Item \"e:\\\\Logiciel\\\\Visual Studio Code\\\\Site internet Araz Groupe\\\\ARAZ GROUPE.webp\" \"e:\\\\Logiciel\\\\Visual Studio Code\\\\Site internet Araz Groupe\\\\assets\\\\hero-bg.webp\")",
+      "PowerShell(Move-Item \"e:\\\\Logiciel\\\\Visual Studio Code\\\\Site internet Araz Groupe\\\\LOGO ARAZ GROUPE.png\" \"e:\\\\Logiciel\\\\Visual Studio Code\\\\Site internet Araz Groupe\\\\assets\\\\logo.png\")",
+      "PowerShell(Move-Item \"e:\\\\Logiciel\\\\Visual Studio Code\\\\Site internet Araz Groupe\\\\LOGO.webp\" \"e:\\\\Logiciel\\\\Visual Studio Code\\\\Site internet Araz Groupe\\\\assets\\\\LOGO.webp\")"
+    ]
+  }
+}

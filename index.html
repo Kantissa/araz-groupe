@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARAZ GROUPE — Legal and Real Estate</title>
+  <meta name="description" content="ARAZ GROUPE accompagne dirigeants, investisseurs et particuliers dans la structuration et la sécurisation de leurs projets au Sénégal et en Afrique de l'Ouest." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-fallback" style="display:flex">
+          <img src="assets/LOGO.webp" alt="ARAZ GROUPE" class="nav-logo-img" />
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">ARAZ GROUPE</span>
+            <span class="nav-logo-sub">LEGAL AND REAL ESTATE</span>
+          </div>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#legal">Legal &amp; Stratégie</a></li>
+        <li><a href="#serenity">Serenity Immo</a></li>
+        <li><a href="#presence">Présence</a></li>
+        <li><a href="#contact" class="nav-cta">Prendre RDV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section id="hero" class="hero">
+      <!-- Photo de fond — placer votre image dans assets/hero-bg.jpg -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Overlay polygon sombre côté gauche -->
+      <div class="hero-polygon" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">ARAZ GROUPE · LEGAL AND REAL ESTATE</p>
+        <div class="hero-arrow-mark" aria-hidden="true">
+          <svg viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="0,0 14,9 0,18" fill="#C59F4A"/>
+          </svg>
+        </div>
+        <h1 class="hero-title">
+          Sécurisez vos<br/>
+          décisions.<br/>
+          <strong>Protégez vos<br/>investissements.</strong>
+        </h1>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
+          <a href="#presentation" class="btn btn-ghost">Découvrir ARAZ</a>
+        </div>
+        <div class="hero-cities" aria-label="Présence internationale">
+          <span>Dakar</span><span class="sep">·</span>
+          <span>Bamako</span><span class="sep">·</span>
+          <span>Abidjan</span><span class="sep">·</span>
+          <span>Paris</span><span class="sep">·</span>
+          <span>New York</span>
+        </div>
+      </div>
+      <a href="#presentation" class="hero-scroll" aria-label="Défiler vers le bas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C59F4A" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PRÉSENTATION — LE PROBLÈME
+    ═══════════════════════════════════════ -->
+    <section id="presentation" class="section section-light">
+      <div class="container">
+        <div class="section-label">Présentation</div>
+        <div class="problem-grid">
+          <div class="problem-text">
+            <h2 class="section-title">Les erreurs non anticipées peuvent coûter des millions</h2>
+            <p class="body-text">
+              Au départ, tout semble fonctionner. Puis viennent les blocages, les conflits, les pertes.
+              Quand les problèmes apparaissent, il est déjà trop tard.
+            </p>
+            <ul class="problem-list">
+              <li>
+                <span class="problem-number">01</span>
+                <div>
+                  <strong>Contrats mal négociés</strong>
+                  <p>Des clauses défavorables qui engagent votre avenir.</p>
+                </div>
+              </li>
+              <li>
+                <span class="problem-number">02</span>
+                <div>
+                  <strong>Associés mal encadrés</strong>
+                  <p>Des conflits qui paralysent l'entreprise et détruisent la valeur.</p>
+                </div>
+              </li>
+              <li>
+                <span class="problem-number">03</span>
+                <div>
+                  <strong>Investissements immobiliers risqués</strong>
+                  <p>Un foncier non sécurisé, un chantier sans contrôle, des pertes irréversibles.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="solution-card">
+            <div class="solution-card-label">La solution</div>
+            <h3 class="solution-title">ARAZ : votre tiers de confiance indépendant.</h3>
+            <div class="solution-divider"></div>
+            <ul class="solution-pillars">
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="2"><path d="M10 2L3 6v6c0 4.4 3.1 7.8 7 9 3.9-1.2 7-4.6 7-9V6L10 2z"/></svg>
+                <span>Nous ne vendons pas.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="2"><path d="M10 2L3 6v6c0 4.4 3.1 7.8 7 9 3.9-1.2 7-4.6 7-9V6L10 2z"/></svg>
+                <span>Nous ne dépendons de personne.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="2"><path d="M10 2L3 6v6c0 4.4 3.1 7.8 7 9 3.9-1.2 7-4.6 7-9V6L10 2z"/></svg>
+                <span>Nous défendons uniquement vos intérêts.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="2"><path d="M10 2L3 6v6c0 4.4 3.1 7.8 7 9 3.9-1.2 7-4.6 7-9V6L10 2z"/></svg>
+                <span>Nous analysons, structurons, négocions et sécurisons.</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="margin-top:2rem">Parlons de votre projet</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         OFFRES — BANDE DE SÉPARATION
+    ═══════════════════════════════════════ -->
+    <div class="offers-banner">
+      <div class="container">
+        <p class="offers-banner-text">Deux offres pour sécuriser l'ensemble de vos projets</p>
+        <div class="offers-banner-pills">
+          <a href="#legal" class="pill">Araz Legal &amp; Stratégie</a>
+          <a href="#serenity" class="pill">Araz Serenity Immo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         ARAZ LEGAL & STRATÉGIE
+    ═══════════════════════════════════════ -->
+    <section id="legal" class="section section-dark">
+      <div class="container">
+        <div class="section-label section-label-gold">Offre 01</div>
+        <h2 class="section-title section-title-light">Araz Legal &amp; Stratégie</h2>
+        <p class="section-subtitle section-subtitle-light">
+          Structurer vos décisions. Sécuriser votre croissance.
+        </p>
+        <p class="body-text body-text-muted" style="max-width:680px;margin:0 auto 4rem">
+          Nous intervenons aux côtés des dirigeants et investisseurs dans leurs décisions les plus sensibles.
+        </p>
+        <div class="services-grid">
+          <div class="service-card service-card-dark">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="#C59F4A" stroke-width="1"/>
+                <path d="M13 20h14M20 13v14" stroke="#C59F4A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 15l10 10M25 15L15 25" stroke="#C59F4A" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Conseil aux dirigeants</h3>
+            <p class="service-card-lead">Les décisions importantes ne se prennent pas seul.</p>
+            <div class="service-divider"></div>
+            <p class="service-card-label">Nous vous accompagnons sur :</p>
+            <ul class="service-list">
+              <li>Contrats</li>
+              <li>Investissements</li>
+              <li>Négociations</li>
+              <li>Partenariats</li>
+              <li>Décisions stratégiques</li>
+            </ul>
+          </div>
+
+          <div class="service-card service-card-dark">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="#C59F4A" stroke-width="1"/>
+                <path d="M14 28V16l6-4 6 4v12" stroke="#C59F4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="17" y="22" width="6" height="6" stroke="#C59F4A" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Structuration &amp; gouvernance</h3>
+            <p class="service-card-lead">Une organisation floue crée des risques.</p>
+            <div class="service-divider"></div>
+            <p class="service-card-label">Nous sécurisons :</p>
+            <ul class="service-list">
+              <li>La gouvernance</li>
+              <li>Les relations entre associés</li>
+              <li>Les prises de décision</li>
+            </ul>
+          </div>
+
+          <div class="service-card service-card-dark">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="#C59F4A" stroke-width="1"/>
+                <path d="M12 28l4-8 4 4 4-8 4 4" stroke="#C59F4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Investissements</h3>
+            <p class="service-card-lead">Un investissement mal structuré peut vous faire perdre le contrôle.</p>
+            <div class="service-divider"></div>
+            <p class="service-card-label">Nous sécurisons :</p>
+            <ul class="service-list">
+              <li>Joint-ventures</li>
+              <li>Partenariats</li>
+              <li>Structuration d'investissements</li>
+            </ul>
+          </div>
+
+          <div class="service-card service-card-dark">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="#C59F4A" stroke-width="1"/>
+                <path d="M14 14h12v8H14z" stroke="#C59F4A" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M20 22v6M14 28h12" stroke="#C59F4A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Recouvrement de créance</h3>
+            <p class="service-card-lead">Un impayé mal géré est une perte.</p>
+            <div class="service-divider"></div>
+            <p class="service-card-label">Nous vous aidons à :</p>
+            <ul class="service-list">
+              <li>Récupérer vos créances</li>
+              <li>Protéger votre trésorerie</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ARAZ SERENITY IMMO
+    ═══════════════════════════════════════ -->
+    <section id="serenity" class="section section-light">
+      <div class="container">
+        <div class="section-label">Offre 02</div>
+        <h2 class="section-title">Araz Serenity Immo</h2>
+        <p class="section-subtitle">La sécurité immobilière au Sénégal</p>
+        <p class="body-text" style="max-width:680px;margin:0 auto 1rem">
+          Vous investissez en toute sécurité, avec un expert qui protège vos intérêts à chaque étape —
+          que vous soyez à Dakar, Bamako, Abidjan, Paris ou New York.
+        </p>
+        <blockquote class="serenity-quote">
+          « Investir sans sécurisation, c'est prendre un risque que vous ne maîtrisez pas. »
+        </blockquote>
+
+        <div class="serenity-grid">
+          <div class="serenity-card">
+            <div class="serenity-card-header">
+              <div class="serenity-card-num">01</div>
+              <h3 class="serenity-card-title">Acquisition</h3>
+            </div>
+            <p class="serenity-card-lead">Sécurisez chaque étape de votre achat immobilier.</p>
+            <ul class="serenity-list">
+              <li>Audit et vérification préalable du foncier et du promoteur</li>
+              <li>Sécurisation du contrat d'achat</li>
+              <li>Suivi du projet de VEFA</li>
+              <li>Gestion des retards de livraison et non-conformité</li>
+            </ul>
+          </div>
+
+          <div class="serenity-card">
+            <div class="serenity-card-header">
+              <div class="serenity-card-num">02</div>
+              <h3 class="serenity-card-title">Construction</h3>
+            </div>
+            <p class="serenity-card-lead">Votre chantier est contrôlé, maîtrisé et sécurisé.</p>
+            <ul class="serenity-list">
+              <li>Analyse des plans architecturaux et structurels</li>
+              <li>Vérification du devis de l'entrepreneur</li>
+              <li>Suivi du chantier par un ingénieur indépendant</li>
+              <li>Contrôle technique avant paiement des décomptes</li>
+              <li>Accompagnement dans l'obtention des autorisations administratives</li>
+            </ul>
+          </div>
+
+          <div class="serenity-card serenity-card-premium">
+            <div class="serenity-card-header">
+              <div class="serenity-card-num serenity-card-num-gold">★</div>
+              <h3 class="serenity-card-title">Serenity Total</h3>
+            </div>
+            <p class="serenity-card-lead">
+              Nous pilotons l'intégralité de votre projet immobilier à votre place, de la recherche du bien jusqu'à la remise des clés.
+            </p>
+            <ul class="serenity-list">
+              <li>Bundle acquisition et construction</li>
+              <li>Représentation sur place auprès des différents acteurs</li>
+              <li>Un chef de projet dédié au suivi</li>
+              <li>Des rapports mensuels consolidés</li>
+              <li>Priorité d'intervention et engagement de résultat</li>
+            </ul>
+            <div class="serenity-premium-tag">Offre complète</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         VALEURS
+    ═══════════════════════════════════════ -->
+    <section class="section section-dark values-section">
+      <div class="container">
+        <div class="section-label section-label-gold">Notre ADN</div>
+        <h2 class="section-title section-title-light">Autorité, confiance, sérieux</h2>
+        <p class="section-subtitle section-subtitle-light">
+          Le prestige se ressent dans la sobriété. ARAZ inspire confiance par la maîtrise, pas par l'esbroufe.
+        </p>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L6 12v16c0 11 8.5 19.5 18 22 9.5-2.5 18-11 18-22V12L24 4z" stroke="#C59F4A" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="value-title">Indépendance</h3>
+            <p class="value-text">Nous ne dépendons de personne. Nous défendons uniquement vos intérêts.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="#C59F4A" stroke-width="1.5"/>
+                <path d="M24 14v10l6 6" stroke="#C59F4A" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="value-title">Autorité</h3>
+            <p class="value-text">L'expertise juridique au service du réel. Des conseils fondés sur l'expérience terrain.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6l4.9 9.9L40 17.6l-8 7.8 1.9 11-9.9-5.2-9.9 5.2 1.9-11-8-7.8 11.1-1.7L24 6z" stroke="#C59F4A" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="value-title">Engagement</h3>
+            <p class="value-text">Chaque client bénéficie d'un suivi rigoureux et d'un engagement de résultat.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="14" width="32" height="24" rx="2" stroke="#C59F4A" stroke-width="1.5"/>
+                <path d="M16 10v8M32 10v8M8 22h32" stroke="#C59F4A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="value-title">Anticipation</h3>
+            <p class="value-text">Nous structurons, sécurisons et anticipons avant que les problèmes surgissent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PRÉSENCE GÉOGRAPHIQUE
+    ═══════════════════════════════════════ -->
+    <section id="presence" class="section section-light presence-section">
+      <div class="container">
+        <div class="section-label">Présence</div>
+        <h2 class="section-title">Afrique de l'Ouest &amp; diaspora</h2>
+        <p class="body-text" style="max-width:580px;margin:0 auto 3rem">
+          ARAZ intervient là où se trouvent vos projets — et là où vous êtes.
+        </p>
+        <div class="cities-grid">
+          <div class="city-item city-primary">
+            <div class="city-dot"></div>
+            <span class="city-name">Dakar</span>
+            <span class="city-country">Sénégal · Siège</span>
+          </div>
+          <div class="city-item">
+            <div class="city-dot"></div>
+            <span class="city-name">Bamako</span>
+            <span class="city-country">Mali</span>
+          </div>
+          <div class="city-item">
+            <div class="city-dot"></div>
+            <span class="city-name">Abidjan</span>
+            <span class="city-country">Côte d'Ivoire</span>
+          </div>
+          <div class="city-item">
+            <div class="city-dot"></div>
+            <span class="city-name">Paris</span>
+            <span class="city-country">France</span>
+          </div>
+          <div class="city-item">
+            <div class="city-dot"></div>
+            <span class="city-name">New York</span>
+            <span class="city-country">États-Unis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT / CTA
+    ═══════════════════════════════════════ -->
+    <section id="contact" class="section section-dark contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-left">
+            <div class="section-label section-label-gold">Contact</div>
+            <h2 class="section-title section-title-light">Parlons de votre projet</h2>
+            <p class="body-text body-text-muted" style="margin-bottom:2.5rem">
+              Vous avez un projet à structurer, un investissement à sécuriser, un contrat à négocier ?
+              Prenons rendez-vous pour en discuter.
+            </p>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 5l8 5 8-5M2 5v10a1 1 0 001 1h14a1 1 0 001-1V5a1 1 0 00-1-1H3a1 1 0 00-1 1z"/>
+                </svg>
+                <a href="mailto:contact@arazgroupe.com">contact@arazgroupe.com</a>
+              </div>
+              <div class="contact-info-item">
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 5a2 2 0 012-2h1.5l2 4.5-1.5 1.5a11 11 0 005 5l1.5-1.5L17 15v1.5a2 2 0 01-2 2C7 18.5 1.5 13 1.5 6A2 2 0 013.5 4H5"/>
+                </svg>
+                <a href="tel:+221785340101">+221 78 534 01 01</a>
+              </div>
+              <div class="contact-info-item">
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 11a3 3 0 100-6 3 3 0 000 6z"/><path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                <span>Almadies, Dakar — Sénégal</span>
+              </div>
+              <div class="contact-info-item">
+                <svg viewBox="0 0 20 20" fill="none" stroke="#C59F4A" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="10" r="8"/><path d="M10 2a8 8 0 010 16M2 10h16M10 2c-2.5 2.5-4 6.5-4 8s1.5 5.5 4 8M10 2c2.5 2.5 4 6.5 4 8s-1.5 5.5-4 8" stroke-linecap="round"/>
+                </svg>
+                <a href="https://www.arazgroupe.com" target="_blank" rel="noopener">www.arazgroupe.com</a>
+              </div>
+            </div>
+            <div class="contact-person">
+              <div class="contact-person-info">
+                <strong>Aicha Aidara BOUSSO</strong>
+                <span>Conseil Juridique &amp; Stratégie</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+221 XX XXX XX XX" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet *</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Choisissez un sujet</option>
+                  <option value="legal">Conseil juridique &amp; stratégie</option>
+                  <option value="investissement">Investissement immobilier</option>
+                  <option value="acquisition">Araz Serenity — Acquisition</option>
+                  <option value="construction">Araz Serenity — Construction</option>
+                  <option value="recouvrement">Recouvrement de créance</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="4" placeholder="Décrivez brièvement votre projet ou votre besoin..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Envoyer la demande
+              </button>
+              <p class="form-notice">Réponse garantie sous 48h ouvrées.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/LOGO.webp" alt="ARAZ GROUPE" class="footer-shield" />
+            <div>
+              <span class="footer-name">ARAZ GROUPE</span>
+              <span class="footer-tagline">LEGAL AND REAL ESTATE</span>
+            </div>
+          </div>
+          <p class="footer-desc">Votre tiers de confiance indépendant au Sénégal et en Afrique de l'Ouest.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#legal">Legal &amp; Stratégie</a></li>
+            <li><a href="#serenity">Serenity Immo</a></li>
+            <li><a href="#presence">Présence</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@arazgroupe.com">contact@arazgroupe.com</a></li>
+            <li><a href="tel:+221785340101">+221 78 534 01 01</a></li>
+            <li>Almadies, Dakar — Sénégal</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Villes</h4>
+          <ul>
+            <li>Dakar</li>
+            <li>Bamako</li>
+            <li>Abidjan</li>
+            <li>Paris</li>
+            <li>New York</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-inner">
+          <p>&copy; 2026 ARAZ GROUPE · Legal and Real Estate. Tous droits réservés.</p>
+          <p class="footer-motto">« Sécurisez vos décisions. Protégez vos investissements. »</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
