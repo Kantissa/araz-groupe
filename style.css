@@ -528,7 +528,7 @@ h3 {
 .offers-banner-pills {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .pill {
   padding: 0.5rem 1.25rem;
