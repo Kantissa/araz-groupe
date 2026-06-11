@@ -333,6 +333,7 @@ h3 {
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--or);
+  margin-top: 0.5rem;
 }
 
 .hero-arrow-mark {
