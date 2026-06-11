@@ -1215,11 +1215,13 @@ svg {
   .hero {
     min-height: 100svh;
   }
+  .hero-eyebrow,
+  .hero-arrow-mark {
+    display: none;
+  }
   .hero-title {
     font-size: 1.6rem;
     line-height: 1.15;
-    flex: unset;
-    margin: 0.5rem 0;
   }
   .hero-bg {
     background-position: center 35%;
@@ -1298,10 +1300,6 @@ svg {
     font-size: 10px;
     padding: 10px 6px;
     white-space: nowrap;
-  }
-  .hero-eyebrow,
-  .hero-arrow-mark {
-    display: none;
   }
   .hero-cities {
     flex-wrap: nowrap;
