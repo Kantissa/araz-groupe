@@ -1290,6 +1290,10 @@ svg {
     padding: 10px 6px;
     white-space: nowrap;
   }
+  .hero-eyebrow,
+  .hero-arrow-mark {
+    display: none;
+  }
   .hero-cities {
     flex-wrap: nowrap;
     white-space: nowrap;
