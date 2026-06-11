@@ -1291,11 +1291,13 @@ svg {
     white-space: nowrap;
   }
   .hero-cities {
-    gap: 0.2rem 0.2rem;
-    font-size: 0.6rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 0;
+    font-size: 0.55rem;
   }
   .hero-cities .sep {
-    margin: 0 0.25rem;
+    margin: 0 0.2rem;
   }
   .offers-banner .container {
     flex-direction: column;
