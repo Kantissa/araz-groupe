@@ -1183,6 +1183,9 @@ svg {
   .hero-title {
     font-size: clamp(1.8rem, 7vw, 2.8rem);
   }
+  .hero-bg {
+    background-position: center 35%;
+  }
   .hero-polygon {
     clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
   }
@@ -1213,9 +1216,12 @@ svg {
   .nav-links a {
     font-size: 1.05rem;
   }
+  .hero-bg {
+    background-position: center 50%;
+  }
   .hero-polygon {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background: rgba(13, 27, 75, 0.82);
+    background: rgba(13, 27, 75, 0.75);
   }
   .hero-content {
     padding: 5rem 1.25rem 3.5rem;
