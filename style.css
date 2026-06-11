@@ -1263,11 +1263,15 @@ svg {
     padding: 5rem 1.25rem 3.5rem;
   }
   .hero-actions {
-    gap: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
   }
   .hero-actions .btn {
-    padding: 0.7rem 1.25rem;
-    font-size: 0.75rem;
+    flex: 1;
+    font-size: 11px;
+    padding: 10px 8px;
+    text-align: center;
   }
   .hero-cities {
     gap: 0.2rem 0.2rem;
