@@ -112,6 +112,15 @@ function showFormFeedback(msg, type) {
   setTimeout(() => el.remove(), 5000);
 }
 
+/* ── Bouton retour en haut (mobile) ─────── */
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 300);
+}, { passive: true });
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 /* ── Smooth scroll pour liens ancres ───── */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {

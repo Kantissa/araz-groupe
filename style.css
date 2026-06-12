@@ -1345,3 +1345,45 @@ svg {
     text-align: center;
   }
 }
+
+/* ── Bouton retour en haut (mobile uniquement) ── */
+#backToTop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #backToTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.25rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1.5px solid var(--or);
+    background: var(--bleu-profond);
+    color: var(--or-clair);
+    font-size: 1.6rem;
+    line-height: 1;
+    box-shadow: 0 4px 18px rgba(13, 27, 75, 0.45);
+    cursor: pointer;
+    z-index: 900;
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  #backToTop.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #backToTop:active {
+    background: var(--bleu-nuit);
+    transform: scale(0.93);
+  }
+}
