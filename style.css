@@ -648,6 +648,19 @@ h3 {
   align-items: start;
 }
 
+.serenity-card-photo {
+  margin: -2rem -2rem 1.25rem -2rem;
+  height: 160px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  overflow: hidden;
+}
+.serenity-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .serenity-card {
   background: var(--blanc);
   border-radius: var(--radius-lg);
