@@ -262,6 +262,13 @@ h3 {
   background: var(--or-clair) !important;
   color: var(--bleu-profond) !important;
 }
+.nav-active {
+  color: var(--or) !important;
+}
+.nav-active::after {
+  width: 100% !important;
+  background: var(--or) !important;
+}
 
 .nav-toggle {
   display: none;
@@ -805,6 +812,162 @@ h3 {
   line-height: 1.6;
 }
 
+/* ── LA FONDATRICE ───────────────────────── */
+.fondatrice-section {
+  background: var(--blanc);
+}
+.fondatrice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.fondatrice-photo-wrapper {
+  position: relative;
+}
+.fondatrice-photo-frame {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.fondatrice-photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: -14px -14px -14px 14px;
+  border: 1px solid var(--or);
+  border-radius: var(--radius-lg);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+.fondatrice-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-lg);
+  display: block;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 3 / 4;
+}
+.fondatrice-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.fondatrice-name {
+  font-family: var(--font-title);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  color: var(--bleu-nuit);
+  line-height: 1.15;
+}
+.fondatrice-excerpt {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #555;
+  border-left: 3px solid var(--or);
+  padding-left: 1.25rem;
+  font-style: italic;
+}
+
+/* ── FONDATRICE PAGE ─────────────────────── */
+.fondatrice-hero {
+  background: linear-gradient(160deg, var(--bleu-nuit) 0%, var(--bleu-profond) 100%);
+  padding: clamp(6rem, 12vw, 10rem) 0 clamp(3rem, 6vw, 5rem);
+  text-align: center;
+}
+.fondatrice-hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 1.25rem;
+}
+.fondatrice-hero-name {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--blanc);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+.fondatrice-hero-title {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--texte-muted);
+  letter-spacing: 0.05em;
+}
+.fondatrice-hero-divider {
+  width: 48px;
+  height: 2px;
+  background: var(--or);
+  margin: 2rem auto 0;
+  opacity: 0.7;
+}
+
+.fondatrice-content-section {
+  background: var(--blanc-casse);
+}
+.fondatrice-content-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.fondatrice-content-photo-frame {
+  position: sticky;
+  top: 100px;
+}
+.fondatrice-content-photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: -14px -14px -14px 14px;
+  border: 1px solid var(--or);
+  border-radius: var(--radius-lg);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+.fondatrice-content-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-lg);
+  display: block;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 3 / 4;
+}
+.fondatrice-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 0.5rem;
+}
+.fondatrice-bio p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #444;
+}
+.fondatrice-bio-highlight {
+  font-family: var(--font-title);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--bleu-nuit);
+  line-height: 1.6;
+  border-left: 3px solid var(--or);
+  padding-left: 1.5rem;
+  font-style: italic;
+}
+.fondatrice-back {
+  margin-top: 3rem;
+  display: inline-flex;
+}
+
 /* ── PRÉSENCE ────────────────────────────── */
 .presence-section {
   text-align: center;
@@ -1273,6 +1436,27 @@ svg {
   }
   .values-grid {
     grid-template-columns: 1fr;
+  }
+  .fondatrice-grid,
+  .fondatrice-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .fondatrice-photo {
+    max-height: 380px;
+    aspect-ratio: 4 / 3;
+    object-position: top center;
+  }
+  .fondatrice-content-photo-frame {
+    position: static;
+  }
+  .fondatrice-content-photo {
+    max-height: 340px;
+    aspect-ratio: 4 / 3;
+  }
+  .fondatrice-photo-frame::before,
+  .fondatrice-content-photo-frame::before {
+    display: none;
   }
 }
 
