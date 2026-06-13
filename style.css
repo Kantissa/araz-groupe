@@ -1387,3 +1387,48 @@ svg {
     transform: scale(0.93);
   }
 }
+
+/* ── Bouton WhatsApp (mobile uniquement) ── */
+#whatsappBtn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #whatsappBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1.25rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+    cursor: pointer;
+    z-index: 900;
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity 0.3s ease 0.4s, transform 0.3s ease 0.4s;
+    text-decoration: none;
+  }
+
+  #whatsappBtn svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  #whatsappBtn.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #whatsappBtn:active {
+    background: #1da851;
+    transform: scale(0.93);
+  }
+}

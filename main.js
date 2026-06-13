@@ -114,9 +114,27 @@ function showFormFeedback(msg, type) {
 
 /* ── Bouton retour en haut (mobile) ─────── */
 const backToTop = document.getElementById('backToTop');
+const whatsappBtn = document.getElementById('whatsappBtn');
+let whatsappTimer = null;
+
 window.addEventListener('scroll', () => {
-  backToTop.classList.toggle('visible', window.scrollY > 300);
+  const show = window.scrollY > 300;
+  backToTop.classList.toggle('visible', show);
+
+  if (show) {
+    if (!whatsappBtn.classList.contains('visible') && !whatsappTimer) {
+      whatsappTimer = setTimeout(() => {
+        whatsappBtn.classList.add('visible');
+        whatsappTimer = null;
+      }, 600);
+    }
+  } else {
+    clearTimeout(whatsappTimer);
+    whatsappTimer = null;
+    whatsappBtn.classList.remove('visible');
+  }
 }, { passive: true });
+
 backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
