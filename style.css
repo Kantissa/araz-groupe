@@ -1336,9 +1336,15 @@ svg {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+  .cities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
   .city-item {
     width: 100%;
     max-width: 100%;
+    min-width: unset;
   }
   .section-title,
   .section-subtitle {
