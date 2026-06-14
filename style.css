@@ -1534,6 +1534,9 @@ svg {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+  .footer-villes {
+    display: none;
+  }
   .cities-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
