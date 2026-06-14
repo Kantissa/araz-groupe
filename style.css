@@ -1353,6 +1353,20 @@ svg {
 }
 */
 
+@media (min-width: 769px) {
+  .nav-links {
+    gap: clamp(0.4rem, 1.1vw, 1.1rem);
+  }
+  .nav-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .nav-container {
+    padding: 1.25rem clamp(0.75rem, 2vw, 2rem);
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
