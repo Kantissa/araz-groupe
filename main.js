@@ -17,6 +17,7 @@ const navLinks = document.getElementById('navLinks');
 toggle.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
   toggle.classList.toggle('active', isOpen);
+  header.classList.toggle('menu-open', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
@@ -24,6 +25,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     toggle.classList.remove('active');
+    header.classList.remove('menu-open');
     document.body.style.overflow = '';
   });
 });

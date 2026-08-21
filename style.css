@@ -174,10 +174,13 @@ h3 {
 }
 /* backdrop-filter makes #header a containing block for its fixed
    descendants — this breaks the full-screen mobile menu overlay
-   (.nav-links.open is position:fixed inset:0). Disable it while
-   the menu is open so the overlay covers the whole viewport again. */
-#header:has(.nav-links.open) {
+   (.nav-links.open is position:fixed inset:0). Disable it while the
+   menu is open (class set by JS — more reliable across browsers than
+   a :has() selector) with no transition, so there's no window where
+   a still-animating blur value keeps the containing block active. */
+#header.menu-open {
   backdrop-filter: none;
+  transition: none;
 }
 
 .nav-container {
