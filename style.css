@@ -172,6 +172,13 @@ h3 {
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
+/* backdrop-filter makes #header a containing block for its fixed
+   descendants — this breaks the full-screen mobile menu overlay
+   (.nav-links.open is position:fixed inset:0). Disable it while
+   the menu is open so the overlay covers the whole viewport again. */
+#header:has(.nav-links.open) {
+  backdrop-filter: none;
+}
 
 .nav-container {
   max-width: 1200px;
