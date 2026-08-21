@@ -1801,6 +1801,17 @@ svg {
   color: var(--or);
 }
 
+/* ── État vide (aucun article affiché) ───── */
+.blog-empty-state {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem 1rem 1rem;
+}
+.blog-empty-state .section-title {
+  margin-bottom: 0.75rem;
+}
+
 /* ── Newsletter ───────────────────────────── */
 .newsletter-section {
   background: linear-gradient(160deg, var(--bleu-nuit) 0%, var(--bleu-profond) 100%);
